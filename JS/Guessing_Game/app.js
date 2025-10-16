@@ -7,7 +7,7 @@ const targetNum =  Math.floor(Math.random() * maximum) + 1;
 
 let guess = parseInt(prompt("Enter your 1st guess!!"));
 let attemts = 1;
-while(guess !== targetNum){
+while(parseInt(guess) !== targetNum){
     if(guess === 'q') break;
     attemts++;
     if(guess > targetNum){
